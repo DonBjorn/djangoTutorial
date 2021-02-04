@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import djangoTutorial.views as project
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('saludo/', project.hello_world),
+    path('nosvemos/', project.goodbye)
 ]
